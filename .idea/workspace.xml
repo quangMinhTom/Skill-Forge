@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="37e8edc8-0eba-4230-99d8-2f9a1ebad4d4" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2uKqtqNByZIE6oBVQkjZt9d6m59" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Node.js.Api-Gateway.js.executor": "Run",
+    "Node.js.Auth-Service.js.executor": "Run",
+    "Node.js.Skill-Service.js.executor": "Run",
+    "Node.js.api-gateway.js.executor": "Run",
+    "Node.js.authService.js.executor": "Run",
+    "Node.js.email.js.executor": "Run",
+    "Node.js.index.js.executor": "Run",
+    "Node.js.server.js (1).executor": "Run",
+    "Node.js.server.js.executor": "Run",
+    "Node.js.userService-server.js.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "javascript.nodejs.core.library.configured.version": "22.14.0",
+    "javascript.nodejs.core.library.typings.version": "22.13.11",
+    "last_opened_file_path": "C:/Users/Quang Minh/Desktop/skillforge/security-service/middleware",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "C:\\Users\\Quang Minh\\AppData\\Local\\Programs\\WebStorm\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Quang Minh\Desktop\skillforge\security-service\middleware" />
+      <recent name="C:\Users\Quang Minh\Desktop\skillforge\security-service" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Quang Minh\Desktop\skillforge\security-service\src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Node.js.Auth-Service.js">
+    <configuration name="Api-Gateway.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/api-gateway/src/Api-Gateway.js" working-dir="$PROJECT_DIR$/api-gateway/src">
+      <method v="2" />
+    </configuration>
+    <configuration name="Auth-Service.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/security-service/src/Auth-Service.js" working-dir="$PROJECT_DIR$/security-service/src">
+      <method v="2" />
+    </configuration>
+    <configuration name="Skill-Service.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/skill-service/src/Skill-Service.js" working-dir="$PROJECT_DIR$/skill-service/src">
+      <method v="2" />
+    </configuration>
+    <configuration name="email.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/security-service/src/middleware/email.js" working-dir="$PROJECT_DIR$/security-service/src/middleware">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.Auth-Service.js" />
+        <item itemvalue="Node.js.email.js" />
+        <item itemvalue="Node.js.Api-Gateway.js" />
+        <item itemvalue="Node.js.Skill-Service.js" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-WS-243.26053.12" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="37e8edc8-0eba-4230-99d8-2f9a1ebad4d4" name="Changes" comment="" />
+      <created>1742007832283</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1742007832283</updated>
+      <workItem from="1742007834969" duration="161000" />
+      <workItem from="1742563936446" duration="5098000" />
+      <workItem from="1742604677164" duration="12596000" />
+      <workItem from="1742646884810" duration="2629000" />
+      <workItem from="1742796096871" duration="5863000" />
+      <workItem from="1742814275305" duration="9578000" />
+      <workItem from="1742895629047" duration="14808000" />
+      <workItem from="1742916290221" duration="7154000" />
+      <workItem from="1742948941488" duration="4653000" />
+      <workItem from="1742962510592" duration="16097000" />
+      <workItem from="1743036778067" duration="12579000" />
+      <workItem from="1743051902036" duration="7302000" />
+      <workItem from="1743082770051" duration="7175000" />
+      <workItem from="1743123988387" duration="4496000" />
+      <workItem from="1743145530339" duration="6642000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
