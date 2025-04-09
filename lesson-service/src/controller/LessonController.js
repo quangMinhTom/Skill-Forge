@@ -3,7 +3,7 @@ import * as respond from '../middlewares/RespondMiddleWare.js';
 
 export const getAllLessons = async function (req, res) {
     try {
-        const subSkillId = req.params.subSkillId; // Expect subSkillId from route params
+        const subSkillId = req.query.subSkillId; // Expect subSkillId from route params
         const data = await lessonService.fetchLessons(subSkillId);
         respond.SuceessRespond(res, "success", "get all lessons for sub-skill", data);
     } catch (e) {
