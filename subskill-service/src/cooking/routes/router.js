@@ -3,14 +3,12 @@ const router = express.Router();
 import * as controller from '../controllers/SubSkillController.js';
 
 router.route('/')
-    .get(controller.getAllSubs)
-    .post(controller.createSub)
-
+    .get(controller.getAllSubs) // Expects ?skillId query param
+    .post(controller.createSub);
 
 router.route('/:id')
     .get(controller.getSubById)
     .patch(controller.updateSub)
     .delete(controller.deleteSub);
-
 
 export default router;

@@ -9,7 +9,7 @@ if(process.env.NODE_ENV === 'development') {
     app.use(morgan('dev'));
 }
 
-app.use("/api/v1/skill/sub-skill",Skillrouter);
+app.use("/api/v1/skill/sub-skills",Skillrouter);
 
 
 
