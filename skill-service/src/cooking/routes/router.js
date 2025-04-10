@@ -21,13 +21,13 @@ router.route('/is-exist/:id')
     .get(controller.isSkillExist);
 
 router.route('/')
-    .get(security.verifyJWT, security.restrictTo("admin", "creator"), controller.getAllSkills)
+    .get(controller.getAllSkills)
     .post(security.verifyJWT, security.restrictTo("admin", "creator"), controller.createSkill);
 
 router.route('/:id')
     .get(controller.getSkillById)
-    .patch(controller.updateSkill)
-    .delete(controller.deleteSkill);
+    .patch(security.verifyJWT, security.restrictTo("admin", "creator"),controller.updateSkill)
+    .delete(security.verifyJWT, security.restrictTo("admin", "creator"),controller.deleteSkill);
 
 
 export default router;

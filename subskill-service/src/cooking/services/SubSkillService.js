@@ -1,13 +1,13 @@
 import * as repo from '../repositories/SubSkillRepository.js'
 import * as skillService from '../axios/Skill-axios.js'
 
-export const getAllSubs = function () {
-    try{
-       return repo.fetchAllSubskills();
-    }catch (err){
+export const getAllSubs = function (skillId) {
+    try {
+        return repo.fetchAllSubskills(skillId);
+    } catch (err) {
         console.log(err);
     }
-}
+};
 
 export const getSubById = function (id) {
     try{

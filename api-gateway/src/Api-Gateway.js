@@ -19,9 +19,11 @@ app.use(morgan("combined")); // Log HTTP requests
 app.disable("x-powered-by"); // Hide Express server information
 
 const services = [
-    { route: '/api/v1/user', target: 'http://localhost:9011/api/v1/user', isProtected: true},
-    { route: '/skill', target: 'http://localhost:9001/api/v1/skill', isProtected: true },
-    { route: '/sub-skill', target: 'http://localhost:9002/api/v1/skill/sub-skill', isProtected: true },
+    { route: '/api/v1/user', target: 'http://localhost:9011/api/v1/user', isProtected: true },
+    { route: '/skills', target: 'http://localhost:9001/api/v1/skills', isProtected: true },
+    { route: '/sub-skills', target: 'http://localhost:9002/api/v1/sub-skills', isProtected: true },
+    { route: '/lessons', target: 'http://localhost:9003/api/v1/lessons', isProtected: true },
+    { route: '/users', target: 'http://localhost:9011/api/v1/users', isProtected: true }
 ];
 
 // Define rate limit constants

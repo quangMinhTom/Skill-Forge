@@ -2,13 +2,14 @@ import * as respond from '../../middlewares/RespondMiddleWare.js';
 import * as service from '../services/SubSkillService.js';
 
 export const getAllSubs = async function (req, res) {
-    try{
-        const data = await service.getAllSubs();
-        respond.SuceessRespond(res,"success","get all skills",data);
+    try {
+        const skillId = req.query.skillId; // Expect skillId from query param
+        const data = await service.getAllSubs(skillId);
+        respond.SuceessRespond(res, "success", "get all sub-skills for skill", data);
     } catch (e) {
-        respond.FailedRespond(res,"failed",e);
+        respond.FailedRespond(res, "failed", e);
     }
-}
+};
 
 export const getSubById = async function(req,res){
  try{

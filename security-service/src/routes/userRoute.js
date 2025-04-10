@@ -8,7 +8,7 @@ router.route('/')
 
 router.route('/:id')
 .get(security.verifyJWT,security.restrictTo("admin"), UsersController.getUserById)
-.put(UsersController.updateUser)
-.delete(UsersController.deleteUser);
+.put(security.verifyJWT,security.restrictTo("admin"),UsersController.updateUser)
+.delete(security.verifyJWT,security.restrictTo("admin"),UsersController.deleteUser);
 
 export default router;

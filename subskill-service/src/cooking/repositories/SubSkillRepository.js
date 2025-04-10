@@ -1,9 +1,8 @@
 import subSkill from '../models/SubSkill.js';
 
-export const fetchAllSubskills = function () {
-    return subSkill.find();
-}
-
+export const fetchAllSubskills = function (skillId) {
+    return subSkill.find({ skillId });
+};
 export const fetchSubskillById =  function (id) {
     return subSkill.findById(id);
 }

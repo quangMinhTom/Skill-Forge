@@ -1,0 +1,91 @@
+.skills {
+    padding: 90px 0;
+    background: #f8f9fa;
+}
+
+.title {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.subtitle {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: #333;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+#skill-info {
+    margin-bottom: 40px; /* Space before sub-skills */
+}
+
+#skill-info h3 {
+    font-size: 28px;
+    color: #2a5298;
+    margin-bottom: 15px;
+}
+
+#skill-info p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+#skill-info .date {
+    font-size: 16px;
+    color: #999;
+}
+
+.skill-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateX(-10px) scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    background-color: #000;
+    z-index: 10;
+}
+
+.skill-card h3 {
+    font-size: 24px;
+    color: #2a5298;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.skill-card:hover h3 {
+    color: #fff;
+}
+
+.skill-card p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.skill-card:hover p {
+    color: #e0e0e0;
+}
+
+.skill-card .date {
+    font-size: 14px;
+    color: #999;
+    transition: color 0.3s ease;
+}
+
+.skill-card:hover .date {
+    color: #d1d1d1;
+}
