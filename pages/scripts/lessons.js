@@ -39,10 +39,17 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Fetch lesson by subSkillId
+    // Fetch lesson by subSkillId with token
     function fetchLesson(subSkillId) {
-        fetch(`http://127.0.0.1:9003/api/v1/lessons/?subSkillId=${subSkillId}`, {
-            method: 'GET'
+        // Get the JWT token from localStorage
+        const token = localStorage.getItem('jwt');
+
+        fetch(`http://127.0.0.1:9000/lessons/?subSkillId=${subSkillId}`, {
+            method: 'GET',
+            headers: {
+                'Authorization': token ? `Bearer ${token}` : '', // Attach token if it exists
+                'Content-Type': 'application/json' // Optional, for clarity
+            }
         })
             .then(response => {
                 if (!response.ok) throw new Error('Failed to fetch lesson');

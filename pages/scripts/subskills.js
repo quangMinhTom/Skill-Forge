@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Render skill info from localStorage
     renderSkillInfo(skill);
 
-    // Fetch, store, and render sub-skills
+    // Fetch, store, and render sub-skills with token
     fetchSubSkills(skillId);
 
     // Clean up only 'selectedSkill' from localStorage
@@ -35,8 +35,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Fetch sub-skills and store in localStorage
     function fetchSubSkills(skillId) {
-        fetch(`http://127.0.0.1:9002/api/v1/sub-skills/?skillId=${skillId}`, {
-            method: 'GET'
+        // Get the JWT token from localStorage
+        const token = localStorage.getItem('jwt');
+
+        fetch(`http://127.0.0.1:9000/sub-skills/?skillId=${skillId}`, {
+            method: 'GET',
+            headers: {
+                'Authorization': token ? `Bearer ${token}` : '', // Attach token if it exists
+                'Content-Type': 'application/json' // Optional, for clarity
+            }
         })
             .then(response => {
                 if (!response.ok) throw new Error('Failed to fetch sub-skills');

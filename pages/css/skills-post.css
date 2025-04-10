@@ -1,0 +1,77 @@
+/* Skills Section */
+.skills {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+}
+
+.title {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+/* Skill Form */
+.skill-form {
+    margin-bottom: 40px;
+}
+
+.skill-form .form-group {
+    max-width: 400px;
+    margin: 0 auto 20px;
+}
+
+.skill-form .form-control {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.skill-form .btn-primary {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+}
+
+.skill-form .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Skills List */
+#skills-list {
+    margin-top: 20px;
+}
+
+.skill-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.skill-card h3 {
+    font-size: 20px;
+    margin: 0 0 10px;
+    color: #007bff;
+}
+
+.skill-card p {
+    font-size: 14px;
+    color: #666;
+    margin: 0 0 10px;
+}
+
+.skill-card .date {
+    font-size: 12px;
+    color: #999;
+}

@@ -18,9 +18,10 @@ const generateJWT = (payload) => {
 // Cookie options (adjust as needed)
 const cookieOptions = {
     httpOnly: true, // Prevent JS access
-    secure: process.env.NODE_ENV === 'production', // HTTPS only in production
+    secure: false, // HTTPS only in production
     sameSite: 'Strict', // CSRF protection
     maxAge: 90 * 24 * 60 * 60 * 1000,
+    withCredentials: true,
 };
 
 export const signUp = async (req, res) => {
@@ -39,7 +40,7 @@ export const signUp = async (req, res) => {
         });
 
         // Send token in cookie
-        res.cookie('jwt', token, cookieOptions);
+        //res.cookie('jwt', token, cookieOptions);
 
         // Send token in response body
         Response.SuccessRespond(res, 201, "User signed up successfully", { newUser, token });
@@ -53,35 +54,44 @@ export const login = async (req, res) => {
     const { email, password } = req.body;
 
     try {
+        console.log('Login attempt with email:', email);
+
         if (!email || !password) {
-            return Response.FailedRespond(res, 400, "Email and password are required");
+            console.log('Missing email or password');
+            return res.status(400).send({ status: 400, message: "Email and password are required" });
         }
 
         const user = await User.findOne({ email }).select('password email role');
         if (!user) {
-            return Response.FailedRespond(res, 401, "User not found");
+            console.log('User not found for email:', email);
+            return res.status(401).send({ status: 401, message: "User not found" });
         }
+        console.log('User found:', { email: user.email, id: user._id, role: user.role });
 
         const isMatch = await user.comparePassword(password);
         if (!isMatch) {
-            return Response.FailedRespond(res, 401, "Email and password are incorrect");
+            console.log('Password mismatch for email:', email);
+            return res.status(401).send({ status: 401, message: "Email and password are incorrect" });
         }
+        console.log('Password matched for user:', user.email);
 
         const token = generateJWT({
             id: user._id,
             role: user.role,
         });
+        console.log('Token generated:', token);
 
-        // Send token in cookie
-        res.cookie('jwt', token, cookieOptions);
-
-        // Send token in response body
-        Response.SuccessRespond(res, 201, "User logged in successfully", {
-            token,
-            user: { email: user.email, id: user._id, role: user.role },
+        // Set cookie and send token in response body
+        res.cookie('jwtToken', token, cookieOptions);
+        let role = user.role;
+        res.status(201).send({
+           status: 201,
+           message: "User logged in successfully",
+            data: { token, role}
         });
     } catch (err) {
-        Response.FailedRespond(res, 500, "Server error");
+        console.error('Login error:', err.message);
+        res.status(500).send({ status: 500, message: "Server error" });
     }
 };
 
@@ -158,7 +168,7 @@ const verifyToken = async (token, secret) => {
 export const verifyJWT = async (req, res) => {
     try {
         const token = extractToken(req.headers.authorization);
-        const decoded = verifyToken(token, process.env.JWT_SECRET);
+        const decoded = await verifyToken(token, process.env.JWT_SECRET);
         Response.SuccessRespond(res, 201, 'JWT verified', decoded);
     } catch (err) {
         Response.FailedRespond(res, err.message.includes('No token') ? 401 : 500, err.message);
@@ -168,6 +178,7 @@ export const verifyJWT = async (req, res) => {
 export const generateInternalToken = async (req, res) => {
     try {
         const token = extractToken(req.headers.authorization);
+        console.log("Token from gateway:", token);
         const decoded = await verifyToken(token, process.env.JWT_SECRET);
         const internalToken = await jwt.sign(decoded, process.env.JWT_INTERNAL_SECRET);
         res.set('Authorization', `Bearer ${internalToken}`);

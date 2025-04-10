@@ -1,6 +1,6 @@
 //Note that return result is within res body, not header
 export const SuccessRespond = (res,status,message,data) => {
-    return res.status(200).json({
+    return res.status(status).json({
         status,
         message,
         data

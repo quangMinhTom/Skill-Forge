@@ -11,15 +11,20 @@ dotenv.config();
 // Create an instance of Express app
 const app = express();
 
+// Enable CORS
+app.use(cors({
+    origin: 'http://localhost:63342', // Allow your frontend origin
+    credentials: true // Allow cookies (for JWT cookie)
+}));
+
 
 // Middleware setup
-app.use(cors()); // Enable CORS
 app.use(helmet()); // Add security headers
 app.use(morgan("combined")); // Log HTTP requests
 app.disable("x-powered-by"); // Hide Express server information
 
 const services = [
-    { route: '/api/v1/user', target: 'http://localhost:9011/api/v1/user', isProtected: true },
+   // { route: '/api/v1/user', target: 'http://localhost:9011/api/v1/user', isProtected: true },
     { route: '/skills', target: 'http://localhost:9001/api/v1/skills', isProtected: true },
     { route: '/sub-skills', target: 'http://localhost:9002/api/v1/sub-skills', isProtected: true },
     { route: '/lessons', target: 'http://localhost:9003/api/v1/lessons', isProtected: true },

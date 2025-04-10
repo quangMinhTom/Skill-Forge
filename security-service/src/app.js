@@ -10,15 +10,17 @@
  //app.use(helmet());
  app.use(express.json());
 
- app.use(cors({
-  origin: 'http://localhost:63342', // Allow your frontend origin
-  credentials: true // Allow cookies (for JWT cookie)
- }));
+
 
  //Data sanitation against NoSQL injection
  app.use(mongoSanitize());
  //Data sanitation against XSS
  app.use(xss());
+
+ app.use(cors({
+  origin: 'http://localhost:63342', // Allow your frontend origin
+  credentials: true // Allow cookies (for JWT cookie)
+ }));
 
  app.use("/api/v1/users",router);
  app.use("/auth",authRouter);

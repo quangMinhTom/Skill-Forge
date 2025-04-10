@@ -11,7 +11,7 @@ export const verifyWithSecurityService = async (req, res, next) => {
     }
 
     const token = authHeader.split(' ')[1];
-
+    console.log(`Token ${token}`);
     try {
         const response = await axios.get('http://127.0.0.1:9011/auth/internalToken', {
             headers: { Authorization: `Bearer ${token}` },

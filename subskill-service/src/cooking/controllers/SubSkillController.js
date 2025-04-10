@@ -22,7 +22,7 @@ export const getSubById = async function(req,res){
 
 export const createSub = async function(req,res){
     try{
-        const data = await service.createSub(req.body);
+        const data = await service.createSub(req.body,req);
 
         if(data !== undefined)
             respond.SuceessRespond(res,"success","create sub skill",data);

@@ -1,9 +1,16 @@
 document.addEventListener('DOMContentLoaded', () => {
     const skillsList = document.getElementById('skills-list');
 
-    // Fetch skills from the API
-    fetch('http://127.0.0.1:9001/api/v1/skills/', {
-        method: 'GET'
+    // Get the JWT token from localStorage
+    const token = localStorage.getItem('jwt');
+
+    // Fetch skills from the API with token in Authorization header
+    fetch('http://127.0.0.1:9000/skills/', {
+        method: 'GET',
+        headers: {
+            'Authorization': token ? `Bearer ${token}` : '', // Attach token if it exists
+            'Content-Type': 'application/json' // Optional, for clarity
+        }
     })
         .then(response => {
             if (!response.ok) throw new Error('Failed to fetch skills');
@@ -34,9 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="date">Created: ${new Date(skill.createdAt).toLocaleDateString()}</div>
             `;
             skillCard.addEventListener('click', () => {
-                // Store skill data in localStorage
                 localStorage.setItem('selectedSkill', JSON.stringify(skill));
-                // Redirect to subskills page with skillId
                 window.location.href = `subskills.html?skillId=${skill._id}`;
             });
             skillsList.appendChild(skillCard);

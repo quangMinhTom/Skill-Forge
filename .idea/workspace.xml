@@ -5,46 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="37e8edc8-0eba-4230-99d8-2f9a1ebad4d4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/pages/css/home.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/css/lessons.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/css/skills.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/css/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/html/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/html/lessons.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/html/skills.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/html/subskills.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/scripts/home.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/scripts/lessons.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/scripts/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/scripts/skills.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/scripts/subskills.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/subskill-service/src/middlewares/security.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/Cooking-Master/index1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/css/lesson-detail.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/css/lessons-post.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/css/skills-post.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/css/subskills-post.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/html/lesson-detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/html/lessons-post.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/html/skills-post.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/html/subskills-post.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/scripts/lesson-detail.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/scripts/lessons-post.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/scripts/skills-post.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/scripts/subskills-post.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api-gateway/src/Api-Gateway.js" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/Api-Gateway.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson-service/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/lesson-service/src/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson-service/src/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/lesson-service/src/node_modules/.package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson-service/src/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/lesson-service/src/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson-service/src/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/lesson-service/src/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson-service/src/routes/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/lesson-service/src/routes/router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/middlewares/verifyJWT.js" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/middlewares/verifyJWT.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/html/skills.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/html/skills.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/scripts/lessons.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/scripts/lessons.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/scripts/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/scripts/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/scripts/skills.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/scripts/skills.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/scripts/subskills.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/scripts/subskills.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/security-service/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/security-service/src/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security-service/src/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/security-service/src/node_modules/.package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security-service/src/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/security-service/src/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security-service/src/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/security-service/src/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security-service/src/routes/userRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/security-service/src/routes/userRoute.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skill-service/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/skill-service/src/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skill-service/src/cooking/routes/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/skill-service/src/cooking/routes/router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skill-service/src/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/skill-service/src/node_modules/.package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skill-service/src/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/skill-service/src/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skill-service/src/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/skill-service/src/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/subskill-service/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/subskill-service/src/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-service/src/middleware/RespondMiddleWare.js" beforeDir="false" afterPath="$PROJECT_DIR$/security-service/src/middleware/RespondMiddleWare.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-service/src/service/authService.js" beforeDir="false" afterPath="$PROJECT_DIR$/security-service/src/service/authService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/subskill-service/src/cooking/axios/Skill-axios.js" beforeDir="false" afterPath="$PROJECT_DIR$/subskill-service/src/cooking/axios/Skill-axios.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/subskill-service/src/cooking/controllers/SubSkillController.js" beforeDir="false" afterPath="$PROJECT_DIR$/subskill-service/src/cooking/controllers/SubSkillController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/subskill-service/src/cooking/repositories/SubSkillRepository.js" beforeDir="false" afterPath="$PROJECT_DIR$/subskill-service/src/cooking/repositories/SubSkillRepository.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/subskill-service/src/cooking/routes/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/subskill-service/src/cooking/routes/router.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/subskill-service/src/cooking/services/SubSkillService.js" beforeDir="false" afterPath="$PROJECT_DIR$/subskill-service/src/cooking/services/SubSkillService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/subskill-service/src/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/subskill-service/src/node_modules/.package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/subskill-service/src/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/subskill-service/src/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/subskill-service/src/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/subskill-service/src/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/subskill-service/src/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/subskill-service/src/SubSkill-Service.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,9 +41,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JavaScript File" />
         <option value="HTML File" />
         <option value="CSS File" />
-        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -81,6 +68,8 @@
     "JavaScript Debug.index.html (1).executor": "Run",
     "JavaScript Debug.index.html (2).executor": "Run",
     "JavaScript Debug.index.html.executor": "Run",
+    "JavaScript Debug.lessons-post.html.executor": "Run",
+    "JavaScript Debug.skills-post.html.executor": "Run",
     "JavaScript Debug.skills.html.executor": "Run",
     "JavaScript Debug.subskills.html.executor": "Run",
     "Node.js.Api-Gateway.js.executor": "Run",
@@ -125,17 +114,17 @@
       <recent name="C:\Users\Quang Minh\Desktop\skillforge\security-service\src" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.skills.html">
+  <component name="RunManager" selected="JavaScript Debug.skills-post.html">
+    <configuration name="lessons-post.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/skillforge/pages/html/lessons-post.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="skills-post.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/skillforge/pages/html/skills-post.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <configuration name="skills.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/skillforge/pages/html/skills.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="subskills.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/skillforge/pages/html/subskills.html" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
     <configuration name="Lesson-Service.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/lesson-service/src/Lesson-Service.js" working-dir="$PROJECT_DIR$/lesson-service/src">
-      <method v="2" />
-    </configuration>
-    <configuration name="Skill-Service.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/skill-service/src/Skill-Service.js" working-dir="$PROJECT_DIR$/skill-service/src">
       <method v="2" />
     </configuration>
     <configuration name="SubSkill-Service.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/subskill-service/src/SubSkill-Service.js" working-dir="$PROJECT_DIR$/subskill-service/src">
@@ -143,11 +132,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.skills-post.html" />
         <item itemvalue="JavaScript Debug.skills.html" />
+        <item itemvalue="JavaScript Debug.lessons-post.html" />
         <item itemvalue="Node.js.Lesson-Service.js" />
-        <item itemvalue="Node.js.Skill-Service.js" />
         <item itemvalue="Node.js.SubSkill-Service.js" />
-        <item itemvalue="JavaScript Debug.subskills.html" />
       </list>
     </recent_temporary>
   </component>
@@ -184,6 +173,7 @@
       <workItem from="1743242284764" duration="28000" />
       <workItem from="1744100057190" duration="18280000" />
       <workItem from="1744161446917" duration="35746000" />
+      <workItem from="1744248779246" duration="34298000" />
     </task>
     <servers />
   </component>

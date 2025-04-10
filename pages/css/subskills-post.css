@@ -1,0 +1,85 @@
+/* Subskills Section */
+.subskills {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+}
+
+.title {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+/* Subskill Form */
+.subskill-form {
+    margin-bottom: 40px;
+}
+
+.subskill-form .form-group {
+    max-width: 400px;
+    margin: 0 auto 20px;
+}
+
+.subskill-form .form-control {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.subskill-form .btn-primary {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+}
+
+.subskill-form .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Result Message */
+#result {
+    font-size: 18px;
+}
+
+#result.success {
+    color: #28a745;
+}
+
+#result.error {
+    color: #dc3545;
+}
+
+/* Subskills List */
+#subskills-list {
+    margin-top: 20px;
+}
+
+.subskill-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    cursor: pointer; /* Indicates clickability */
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.subskill-card:hover {
+    transform: translateY(-5px); /* Matches skills page hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.subskill-card h3 {
+    font-size: 20px;
+    margin: 0 0 10px;
+    color: #007bff;
+}
+
+.subskill-card p {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+}

@@ -19,13 +19,26 @@ document.getElementById('loginForm').addEventListener('submit', async (e) => {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(payload),
-            credentials: 'include'
+            credentials: 'include' // Keep cookie support
         });
 
-        if (!response.ok) throw new Error('Login failed');
+        if (!response.ok) {
+            const errorData = await response.json();
+            throw new Error(errorData.message || 'Login failed');
+        }
         const data = await response.json();
         console.log('Login successful:', data);
-        window.location.href = 'home.html'; // Redirect to home page
+
+        // Store token in localStorage
+        if (data.data && data.data.token) {
+            localStorage.setItem('jwt', data.data.token);
+            localStorage.setItem('role', data.data.role);
+            console.log('Token stored in localStorage:', data.data.token);
+        } else {
+            console.warn('No token found in response');
+        }
+
+        window.location.href = '../Cooking-Master/index1.html'; // Redirect to home page
     } catch (error) {
         console.error('Error:', error);
         alert('Login failed: ' + error.message);
@@ -53,13 +66,25 @@ document.getElementById('signupForm').addEventListener('submit', async (e) => {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(payload),
-            credentials: 'include'
+            credentials: 'include' // Keep cookie support
         });
 
-        if (!response.ok) throw new Error('Signup failed');
+        if (!response.ok) {
+            const errorData = await response.json();
+            throw new Error(errorData.message || 'Signup failed');
+        }
         const data = await response.json();
         console.log('Signup successful:', data);
-        window.location.href = 'home.html'; // Redirect to home page
+
+        // Store token in localStorage
+        if (data.data && data.data.token) {
+            localStorage.setItem('jwt', data.data.token);
+            console.log('Token stored in localStorage:', data.data.token);
+        } else {
+            console.warn('No token found in response');
+        }
+
+        window.location.href = '../Cooking-Master/index1.html'; // Redirect to home page
     } catch (error) {
         console.error('Error:', error);
         alert('Signup failed: ' + error.message);
