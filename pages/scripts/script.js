@@ -19,7 +19,7 @@ document.getElementById('loginForm').addEventListener('submit', async (e) => {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(payload),
-            credentials: 'include' // Keep cookie support
+            credentials: 'include',
         });
 
         if (!response.ok) {
@@ -29,16 +29,22 @@ document.getElementById('loginForm').addEventListener('submit', async (e) => {
         const data = await response.json();
         console.log('Login successful:', data);
 
-        // Store token in localStorage
+        // Store token and role in localStorage
         if (data.data && data.data.token) {
             localStorage.setItem('jwt', data.data.token);
-            localStorage.setItem('role', data.data.role);
+            localStorage.setItem('role', data.data.role || 'user'); // Default to 'user' if role is missing
             console.log('Token stored in localStorage:', data.data.token);
+            console.log('Role stored in localStorage:', data.data.role);
         } else {
             console.warn('No token found in response');
         }
 
-        window.location.href = '../Cooking-Master/index1.html'; // Redirect to home page
+        // Redirect based on role
+        if (data.data.role === 'admin') {
+            window.location.href = 'admin.html';
+        } else {
+            window.location.href = '../Cooking-Master/index1.html';
+        }
     } catch (error) {
         console.error('Error:', error);
         alert('Login failed: ' + error.message);
@@ -66,7 +72,7 @@ document.getElementById('signupForm').addEventListener('submit', async (e) => {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(payload),
-            credentials: 'include' // Keep cookie support
+            credentials: 'include',
         });
 
         if (!response.ok) {
@@ -79,12 +85,19 @@ document.getElementById('signupForm').addEventListener('submit', async (e) => {
         // Store token in localStorage
         if (data.data && data.data.token) {
             localStorage.setItem('jwt', data.data.token);
+            localStorage.setItem('role', data.data.role || 'user'); // Default to 'user' if role is missing
             console.log('Token stored in localStorage:', data.data.token);
+            console.log('Role stored in localStorage:', data.data.role);
         } else {
             console.warn('No token found in response');
         }
 
-        window.location.href = '../Cooking-Master/index1.html'; // Redirect to home page
+        // Redirect based on role
+        if (data.data.role === 'admin') {
+            window.location.href = 'admin.html';
+        } else {
+            window.location.href = '../Cooking-Master/index1.html';
+        }
     } catch (error) {
         console.error('Error:', error);
         alert('Signup failed: ' + error.message);

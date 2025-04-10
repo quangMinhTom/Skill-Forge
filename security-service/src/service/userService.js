@@ -1,8 +1,8 @@
 import * as userRepo from '../repository/UserRepo.js';
 
 // Get all users
-export const getAllUsers = () => {
-    return userRepo.getAllUsers();
+export const getAllUsers = async () => {
+    return await userRepo.getAllUsers();
 };
 
 // Get a single user by ID

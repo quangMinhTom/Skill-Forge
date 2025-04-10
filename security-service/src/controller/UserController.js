@@ -6,9 +6,9 @@ import * as userService from "../service/userService.js"
 export const getAllUsers = async (req, res) => {
     try {
         const users = await userService.getAllUsers();
-        Respond.SuccessRespond(res, true, 'Users retrieved successfully', users);
+        Respond.SuccessRespond(res, 201, 'Users retrieved successfully', users);
     } catch (err) {
-        Respond.FailedRespond(res, false, err.message);
+        Respond.FailedRespond(res, 401, err.message);
     }
 };
 
@@ -17,11 +17,11 @@ export const getUserById = async (req, res) => {
     try {
         const user = await userService.getUserById(req.params.id);
         if (!user) {
-            return Respond.FailedRespond(res, false, 'User not found');
+            return Respond.FailedRespond(res, 400, 'User not found');
         }
-        Respond.SuccessRespond(res, true, 'User retrieved successfully', user);
+        Respond.SuccessRespond(res, 201, 'User retrieved successfully', user);
     } catch (err) {
-        Respond.FailedRespond(res, false, err.message);
+        Respond.FailedRespond(res, 401, err.message);
     }
 };
 
@@ -30,14 +30,14 @@ export const updateUser = async (req, res) => {
     try {
         const updatedUser = await userService.updateUser(req.params.id, req.body);
         if (!updatedUser) {
-            return Respond.FailedRespond(res, false, 'User not found');
+            return Respond.FailedRespond(res, 201, 'User not found');
         }
-        Respond.SuccessRespond(res, true, 'User updated successfully', updatedUser);
+        Respond.SuccessRespond(res, 401, 'User updated successfully', updatedUser);
     } catch (err) {
         if (err.code === 11000) {
-            return  Respond.FailedRespond(res, false, 'Username or email already exists');
+            return  Respond.FailedRespond(res, 201, 'Username or email already exists');
         }
-        Respond.FailedRespond(res, false, err.message);
+        Respond.FailedRespond(res, 401, err.message);
     }
 };
 
@@ -46,10 +46,10 @@ export const deleteUser = async (req, res) => {
     try {
         const user = await userService.deleteUser(req.params.id);
         if (!user) {
-            return Respond.FailedRespond(res, false, 'User not found');
+            return Respond.FailedRespond(res, 401, 'User not found');
         }
-        Respond.SuccessRespond(res, true, 'User soft-deleted', user);
+        Respond.SuccessRespond(res, 201, 'User soft-deleted', user);
     } catch (err) {
-        Respond.FailedRespond(res, false, err.message);
+        Respond.FailedRespond(res, 400, err.message);
     }
 };

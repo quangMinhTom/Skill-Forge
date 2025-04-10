@@ -1,0 +1,57 @@
+/* Users Section */
+.users {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+}
+
+.title {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+/* Result Message */
+#result {
+    font-size: 18px;
+}
+
+#result.success {
+    color: #28a745;
+}
+
+#result.error {
+    color: #dc3545;
+}
+
+/* Users List */
+#users-list {
+    margin-top: 20px;
+}
+
+.user-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    cursor: pointer; /* Indicates clickability */
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.user-card:hover {
+    transform: translateY(-5px); /* Hover effect similar to previous cards */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.user-card h3 {
+    font-size: 20px;
+    margin: 0 0 10px;
+    color: #007bff;
+}
+
+.user-card p {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0;
+}

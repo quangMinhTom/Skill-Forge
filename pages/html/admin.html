@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Skill Forge - Lessons</title>
+  <title>Skill Forge - Admin Dashboard</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -15,10 +15,11 @@
   <link rel="stylesheet" href="../Cooking-Master/css/bootstrap.min.css">
   <link rel="stylesheet" href="../Cooking-Master/css/jquery.lightbox.min.css">
   <link rel="stylesheet" href="../Cooking-Master/css/style.css">
-  <link rel="stylesheet" href="../css/lessons-post.css">
+  <link rel="stylesheet" href="../css/admin.css"> <!-- Admin-specific CSS -->
 </head>
 
 <body id="page-top">
+<!-- Reused Header (Navbar) -->
 <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
@@ -31,12 +32,6 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
         <li><a class="page-scroll" href="admin.html">Home</a></li>
-        <li><a class="page-scroll" href="home.html#about">About us</a></li>
-        <li><a class="page-scroll" href="home.html#recipes">Recipes</a></li>
-        <li><a class="page-scroll" href="home.html#gallery">Gallery</a></li>
-        <li><a class="page-scroll" href="home.html#team">Team</a></li>
-        <li><a class="page-scroll" href="home.html#blog">Blog</a></li>
-        <li><a class="page-scroll" href="home.html#contact">Contact</a></li>
         <li>
           <a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
             <span class="fa fa-search"></span>
@@ -58,43 +53,19 @@
   </div>
 </nav>
 
-<section id="lessons" class="lessons bwt-90">
+<!-- Admin Dashboard Section -->
+<section id="admin-dashboard" class="admin-dashboard bwt-90">
   <div class="container text-center">
-    <h1 class="title">Lessons</h1>
-
-    <!-- Form to Add a Lesson -->
-    <div class="lesson-form">
-      <form id="addLessonForm">
-        <div class="form-group">
-          <label for="subSkillId">Subskill ID</label>
-          <input type="text" id="subSkillId" class="form-control" readonly>
-        </div>
-        <div class="form-group">
-          <input type="text" id="lessonTitle" class="form-control" placeholder="Enter Lesson Title" required>
-        </div>
-        <div class="form-group">
-          <textarea id="lessonOverview" class="form-control" placeholder="Enter Lesson Overview" rows="3" required></textarea>
-        </div>
-        <div class="form-group">
-          <textarea id="lessonSteps" class="form-control" placeholder="Enter Steps (e.g., 1. Step one\n2. Step two)" rows="5" required></textarea>
-        </div>
-        <div class="form-group">
-          <textarea id="lessonTips" class="form-control" placeholder="Enter Tips (one per line)" rows="3"></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Add Lesson</button>
-      </form>
+    <h1 class="title">Admin Dashboard</h1>
+    <div class="dashboard-buttons mt-4">
+      <button id="content-btn" class="btn btn-primary">Content</button>
+      <button id="user-manager-btn" class="btn btn-primary">User Manager</button>
     </div>
-
-    <!-- Result Message -->
     <div id="result" class="mt-4"></div>
-
-    <!-- Lessons List -->
-    <div id="lessons-list" class="row mt-5">
-      <!-- Lessons will be dynamically inserted here -->
-    </div>
   </div>
 </section>
 
+<!-- Reused Footer -->
 <section class="bwt-footer bwt-50">
   <div class="container text-center">
     <h3>Get the latest posts delivered directly to your inbox!</h3>
@@ -138,6 +109,6 @@
 <script src="../Cooking-Master/js/jquery.easing.min.js"></script>
 <script src="../Cooking-Master/js/jquery.lightbox.min.js"></script>
 <script src="../Cooking-Master/js/script.js"></script>
-<script src="../scripts/lessons-post.js"></script>
+<script src="../scripts/admin.js"></script> <!-- Admin-specific JS -->
 </body>
 </html>

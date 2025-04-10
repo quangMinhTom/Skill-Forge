@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Skill Forge - Lessons</title>
+  <title>Skill Forge - Users</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -15,10 +15,11 @@
   <link rel="stylesheet" href="../Cooking-Master/css/bootstrap.min.css">
   <link rel="stylesheet" href="../Cooking-Master/css/jquery.lightbox.min.css">
   <link rel="stylesheet" href="../Cooking-Master/css/style.css">
-  <link rel="stylesheet" href="../css/lessons-post.css">
+  <link rel="stylesheet" href="../css/users.css"> <!-- Users-specific CSS -->
 </head>
 
 <body id="page-top">
+<!-- Reused Header (Navbar) -->
 <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
@@ -58,43 +59,22 @@
   </div>
 </nav>
 
-<section id="lessons" class="lessons bwt-90">
+<!-- Users Section -->
+<section id="users" class="users bwt-90">
   <div class="container text-center">
-    <h1 class="title">Lessons</h1>
-
-    <!-- Form to Add a Lesson -->
-    <div class="lesson-form">
-      <form id="addLessonForm">
-        <div class="form-group">
-          <label for="subSkillId">Subskill ID</label>
-          <input type="text" id="subSkillId" class="form-control" readonly>
-        </div>
-        <div class="form-group">
-          <input type="text" id="lessonTitle" class="form-control" placeholder="Enter Lesson Title" required>
-        </div>
-        <div class="form-group">
-          <textarea id="lessonOverview" class="form-control" placeholder="Enter Lesson Overview" rows="3" required></textarea>
-        </div>
-        <div class="form-group">
-          <textarea id="lessonSteps" class="form-control" placeholder="Enter Steps (e.g., 1. Step one\n2. Step two)" rows="5" required></textarea>
-        </div>
-        <div class="form-group">
-          <textarea id="lessonTips" class="form-control" placeholder="Enter Tips (one per line)" rows="3"></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Add Lesson</button>
-      </form>
-    </div>
+    <h1 class="title">Users</h1>
 
     <!-- Result Message -->
     <div id="result" class="mt-4"></div>
 
-    <!-- Lessons List -->
-    <div id="lessons-list" class="row mt-5">
-      <!-- Lessons will be dynamically inserted here -->
+    <!-- Users List -->
+    <div id="users-list" class="row mt-5">
+      <!-- Users will be dynamically inserted here -->
     </div>
   </div>
 </section>
 
+<!-- Reused Footer -->
 <section class="bwt-footer bwt-50">
   <div class="container text-center">
     <h3>Get the latest posts delivered directly to your inbox!</h3>
@@ -133,11 +113,12 @@
   <a class="page-scroll" href="#page-top"><i class="fa fa-chevron-up"></i></a>
 </div>
 
+<!-- Scripts -->
 <script src="../Cooking-Master/js/jquery.min.js"></script>
 <script src="../Cooking-Master/js/bootstrap.min.js"></script>
 <script src="../Cooking-Master/js/jquery.easing.min.js"></script>
 <script src="../Cooking-Master/js/jquery.lightbox.min.js"></script>
 <script src="../Cooking-Master/js/script.js"></script>
-<script src="../scripts/lessons-post.js"></script>
+<script src="../scripts/users.js"></script> <!-- Users-specific JS -->
 </body>
 </html>
