@@ -5,21 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="37e8edc8-0eba-4230-99d8-2f9a1ebad4d4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/comment-service/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/comment-service/src/Comment-Service.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/comment-service/src/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/comment-service/src/controller/CommentController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/comment-service/src/middlewares/RespondMiddleWare.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/comment-service/src/middlewares/security.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/comment-service/src/model/Comment.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/comment-service/src/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/comment-service/src/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/comment-service/src/repository/CommentRepository.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/comment-service/src/routes/router.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/comment-service/src/service/CommentService.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/src/Api-Gateway.js" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/Api-Gateway.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/Cooking-Master/index1.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Cooking-Master/index1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/html/admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/html/admin.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,14 +93,14 @@
       <recent name="C:\Users\Quang Minh\Desktop\skillforge\security-service\src" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.index1.html">
+  <component name="RunManager" selected="JavaScript Debug.index.html">
     <configuration name="index1.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/skillforge/pages/Cooking-Master/index1.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="Api-Gateway.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/api-gateway/src/Api-Gateway.js" working-dir="$PROJECT_DIR$/api-gateway/src">
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/skillforge/pages/Cooking-Master/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="Auth-Service.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/security-service/src/Auth-Service.js" working-dir="$PROJECT_DIR$/security-service/src">
+    <configuration name="Api-Gateway.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/api-gateway/src/Api-Gateway.js" working-dir="$PROJECT_DIR$/api-gateway/src">
       <method v="2" />
     </configuration>
     <configuration name="Comment-Service.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/comment-service/src/Comment-Service.js" working-dir="$PROJECT_DIR$/comment-service/src">
@@ -124,11 +111,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.index.html" />
         <item itemvalue="JavaScript Debug.index1.html" />
         <item itemvalue="Node.js.Comment-Service.js" />
         <item itemvalue="Node.js.Api-Gateway.js" />
         <item itemvalue="Node.js.Lesson-Service.js" />
-        <item itemvalue="Node.js.Auth-Service.js" />
       </list>
     </recent_temporary>
   </component>
@@ -166,7 +153,7 @@
       <workItem from="1744100057190" duration="18280000" />
       <workItem from="1744161446917" duration="35746000" />
       <workItem from="1744248779246" duration="40412000" />
-      <workItem from="1744332285171" duration="4726000" />
+      <workItem from="1744332285171" duration="6131000" />
     </task>
     <servers />
   </component>
