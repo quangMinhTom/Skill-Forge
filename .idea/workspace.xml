@@ -5,28 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="37e8edc8-0eba-4230-99d8-2f9a1ebad4d4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/pages/css/admin.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/css/user-detail.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/css/users.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/html/admin.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/html/user-detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/html/users.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/scripts/admin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/scripts/user-detail.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/scripts/users.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/comment-service/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/comment-service/src/Comment-Service.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/comment-service/src/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/comment-service/src/controller/CommentController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/comment-service/src/middlewares/RespondMiddleWare.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/comment-service/src/middlewares/security.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/comment-service/src/model/Comment.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/comment-service/src/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/comment-service/src/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/comment-service/src/repository/CommentRepository.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/comment-service/src/routes/router.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/comment-service/src/service/CommentService.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api-gateway/src/Api-Gateway.js" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/Api-Gateway.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/Cooking-Master/index1.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Cooking-Master/index1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/html/lesson-detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/html/lesson-detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/html/lessons-post.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/html/lessons-post.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/html/lessons.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/html/lessons.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/html/skills-post.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/html/skills-post.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/html/skills.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/html/skills.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/html/subskills-post.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/html/subskills-post.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/html/subskills.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/html/subskills.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/scripts/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/scripts/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security-service/src/controller/UserController.js" beforeDir="false" afterPath="$PROJECT_DIR$/security-service/src/controller/UserController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security-service/src/service/userService.js" beforeDir="false" afterPath="$PROJECT_DIR$/security-service/src/service/userService.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +56,7 @@
     "JavaScript Debug.index.html (1).executor": "Run",
     "JavaScript Debug.index.html (2).executor": "Run",
     "JavaScript Debug.index.html.executor": "Run",
+    "JavaScript Debug.index1.html.executor": "Run",
     "JavaScript Debug.lessons-post.html.executor": "Run",
     "JavaScript Debug.skills-post.html.executor": "Run",
     "JavaScript Debug.skills.html.executor": "Run",
@@ -70,6 +64,7 @@
     "JavaScript Debug.users.html.executor": "Run",
     "Node.js.Api-Gateway.js.executor": "Run",
     "Node.js.Auth-Service.js.executor": "Run",
+    "Node.js.Comment-Service.js.executor": "Debug",
     "Node.js.Lesson-Service.js.executor": "Run",
     "Node.js.Skill-Service.js.executor": "Run",
     "Node.js.SubSkill-Service.js.executor": "Run",
@@ -86,7 +81,7 @@
     "git-widget-placeholder": "master",
     "javascript.nodejs.core.library.configured.version": "22.14.0",
     "javascript.nodejs.core.library.typings.version": "22.13.11",
-    "last_opened_file_path": "C:/Users/Quang Minh/Desktop/skillforge/pages/css",
+    "last_opened_file_path": "C:/Users/Quang Minh/Desktop/skillforge/comment-service",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -99,11 +94,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Quang Minh\Desktop\skillforge\comment-service" />
       <recent name="C:\Users\Quang Minh\Desktop\skillforge\pages\css" />
       <recent name="C:\Users\Quang Minh\Desktop\skillforge\subskill-service\src\middlewares" />
       <recent name="C:\Users\Quang Minh\Desktop\skillforge\lesson-service\src" />
       <recent name="C:\Users\Quang Minh\Desktop\skillforge\lesson-service" />
-      <recent name="C:\Users\Quang Minh\Desktop\skillforge\security-service\middleware" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Quang Minh\Desktop\skillforge\pages\css" />
@@ -111,29 +106,29 @@
       <recent name="C:\Users\Quang Minh\Desktop\skillforge\security-service\src" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.index.html">
-    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/skillforge/pages/Cooking-Master/index.html" useBuiltInWebServerPort="true">
+  <component name="RunManager" selected="JavaScript Debug.index1.html">
+    <configuration name="index1.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/skillforge/pages/Cooking-Master/index1.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="users.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/skillforge/pages/html/users.html" useBuiltInWebServerPort="true">
+    <configuration name="Api-Gateway.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/api-gateway/src/Api-Gateway.js" working-dir="$PROJECT_DIR$/api-gateway/src">
+      <method v="2" />
+    </configuration>
+    <configuration name="Auth-Service.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/security-service/src/Auth-Service.js" working-dir="$PROJECT_DIR$/security-service/src">
+      <method v="2" />
+    </configuration>
+    <configuration name="Comment-Service.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/comment-service/src/Comment-Service.js" working-dir="$PROJECT_DIR$/comment-service/src">
       <method v="2" />
     </configuration>
     <configuration name="Lesson-Service.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/lesson-service/src/Lesson-Service.js" working-dir="$PROJECT_DIR$/lesson-service/src">
       <method v="2" />
     </configuration>
-    <configuration name="Skill-Service.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/skill-service/src/Skill-Service.js" working-dir="$PROJECT_DIR$/skill-service/src">
-      <method v="2" />
-    </configuration>
-    <configuration name="SubSkill-Service.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/subskill-service/src/SubSkill-Service.js" working-dir="$PROJECT_DIR$/subskill-service/src">
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JavaScript Debug.index.html" />
-        <item itemvalue="Node.js.SubSkill-Service.js" />
-        <item itemvalue="Node.js.Skill-Service.js" />
+        <item itemvalue="JavaScript Debug.index1.html" />
+        <item itemvalue="Node.js.Comment-Service.js" />
+        <item itemvalue="Node.js.Api-Gateway.js" />
         <item itemvalue="Node.js.Lesson-Service.js" />
-        <item itemvalue="JavaScript Debug.users.html" />
+        <item itemvalue="Node.js.Auth-Service.js" />
       </list>
     </recent_temporary>
   </component>
@@ -170,7 +165,8 @@
       <workItem from="1743242284764" duration="28000" />
       <workItem from="1744100057190" duration="18280000" />
       <workItem from="1744161446917" duration="35746000" />
-      <workItem from="1744248779246" duration="40388000" />
+      <workItem from="1744248779246" duration="40412000" />
+      <workItem from="1744332285171" duration="4726000" />
     </task>
     <servers />
   </component>

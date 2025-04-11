@@ -28,7 +28,8 @@ const services = [
     { route: '/skills', target: 'http://localhost:9001/api/v1/skills', isProtected: true },
     { route: '/sub-skills', target: 'http://localhost:9002/api/v1/sub-skills', isProtected: true },
     { route: '/lessons', target: 'http://localhost:9003/api/v1/lessons', isProtected: true },
-    { route: '/users', target: 'http://localhost:9011/api/v1/users', isProtected: true }
+    { route: '/users', target: 'http://localhost:9011/api/v1/users', isProtected: true },
+    { route: '/comments', target: 'http://localhost:9004/api/v1/comments', isProtected: true }
 ];
 
 // Define rate limit constants
